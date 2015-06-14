@@ -59,7 +59,9 @@ This section describes all of the variables in the tidyData.txt data set, includ
 **Column 1**
 
 Label: Activity
+
 Class: character
+
 Unique elements:
 
  - WALKING
@@ -72,32 +74,35 @@ Unique elements:
 **Column 2**
 
 Label: Subject
+
 Class: integer
+
 Unique elements: integers from 1 to 30, where each integer represents a unique subject (e.g. person).
 
 **Columns 3 to 68**
 
 Label: (see below)
+
 Class: numeric
 
 Each feature column is labeled in the following form:
 
 `<`t|f`><`feature`>_<`Mean|Std`>_<`Xaxis|Yaxis|Zaxis`>`
 
-where **t** indicates time domain measurement, **f** indicates frequency-domain measurement, **feature** describes the exact measurement that was made (see below), **Mean** or **Std** (optional) indicate an average or standard deviation of the feature, and **Xaxis**, **Yaxis**, or **Zaxis** (optional) indicate the x, y, or z (i.e. height) axis of the measurement.
+The first letter is either a **t** to indicate time domain measurement, or an **f** to indicate frequency-domain measurement. Next, the label includes a **feature** text that describes the exact measurement that was made (see below). Next the label includes either **Mean** or **Std** text to indicate an average or standard deviation of the feature. Finally, the label optionally includes an **Xaxis**, **Yaxis**, or **Zaxis** text to indicate the x, y, or z (i.e. height) axis of the measurement.
 
-The **feature** label is one of the following, which describes the measurement that was made during the experiment:
+The **feature** text is one of the following, which describes the measurement that was made during the experiment:
 
-BodyAcc
-GravityAcc
-BodyAccJerk
-BodyGyro
-BodyGyroJerk
-BodyAccMag
-GravityAccMag
-BodyAccJerkMag
-BodyGyroMag
-BodyGyroJerkMag
+ - BodyAcc
+ - GravityAcc
+ - BodyAccJerk
+ - BodyGyro
+ - BodyGyroJerk
+ - BodyAccMag
+ - GravityAccMag
+ - BodyAccJerkMag
+ - BodyGyroMag
+ - BodyGyroJerkMag
 
 The original raw feature data is normalized and bounded within [-1,1]. 
 
